@@ -1,0 +1,235 @@
+<!--
+    html: Heypertext Markup language
+-->
+<!--
+    to see the accessibility of your site uoy have to:
+    => open site with live streem in visual studio code
+    => see the code whith a right click in the mouse
+    => go to lighthouse
+    => generate report
+-->
+<!--
+    !doctype is the code of html5, without doctype your site will be with "Quirks Mode"and this mode dosen't support 
+all, and with doctype your site will be with "standard mode"
+-->
+<!--
+        html4 => html5
+     <div id="header"> => <header>
+     <div id="navigation" => <nav>
+     <div id ="sidebar"> => <aside>
+     <div id="content"> => <main> or <section>
+     <div id= "post" => <article>
+     <div id="footer" => <footer>
+     <div id="figure"> => <figure> (image)
+     image caption (title) => <figcaption>
+    
+-->
+<!doctype html>
+<html lang='en'>
+    <!--
+        all the inforamation about the your site are in the HEAD
+    -->
+    <head>
+        <meta charset="UTF-8"/>
+        <!--
+            UTF-8 supported all the language, and it is the international code now
+        -->
+        <title>My first page</title>
+        <meta name="description" content="this is my practice in html5"/>
+        <style></style> <!--for css-->
+        <script></script> <!--for java script-->
+        <link rel="stylesheet" href=""/>
+
+    </head>
+    <body>
+        <!--
+            -heading in the site is from h1 to h6
+            -isn't logique if you have more than one h1
+            -we can't find for exp h2 insid h4
+        -->
+        <h1 id="anis">Anis</h1>
+        <p>this is my first page, Welcome!</p> <P>i'm in the second line</P>
+        <!--
+            they will not be in the same line because 'p' is a block element
+        -->
+        <!--
+            Global  Attributes(like 'class,hidden...') you can put them in all the elements (like 'p.h...')
+        -->
+        <p class="element">Welcome To The New World</p>
+        <p class='element'>Welcome To The New World</p>
+        <p class=element>Welcome To The New World</p>
+        <!--no diffirent, will be a different just if we have more than one word-->
+        <!-- 
+            -b => bold
+            -strong => bold => impartant text
+            -i => italic
+            -em => emphasized => impartant text
+            -mark => we can do mark to the word or text
+            -u => underline
+            -small => smaller text
+            -del => deleted text
+            -ins => inserted text
+            -sub => subscript
+            -sup => superscript
+        -->
+        <p>i'm a <i><mark>front-end</mark></i> <b>devloper</b></p>
+        <p>i'm a <em><u>front-end</u></em> <strong>devloper</strong></p>
+        <small>we <del>hate</del><ins>love you</ins></small>
+        <p>h1+2O=h<sub>2</sub>o</p>
+        <p>2<sup>2</sup>=4</p>
+        
+
+        <!--
+            a => a link text
+            the will be in the same line, because 'a' is an inline element
+            target= blank, to oppen in another window
+        -->
+        <a href="home-page-test.html">home</a>
+        <a href="test2.html">test2</a>
+        <a href="www.google.com">google</a>
+        <a href="www.yandex.com" target="_blank" title="go to yandex ">yandex</a>
+        <a href="test.html" title="about us">about us</a>
+        <a href="#anis" title="go up">go up</a>
+        <a href="mailto: 11@gmail.ru">contact us</a>
+        
+        
+        <!--
+            src => source (fromwher)
+            alt => alternate text
+            '/' when the img inside the folder
+            '../' when the image outside the folder
+
+        -->
+
+        <img src="#"
+             alt="naruto"
+        >
+
+        <!--
+            ul => unordered list
+            li => list item
+            ol => ordered list
+            reversed => from 1,2,3.. to ..3,2,1
+            start => start from position
+            type => type of ordering
+            value => like start but in the element 'li'
+            dl => descreption list
+            dt => desc term
+            dd => desc of the term
+        -->
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <ol start="100">
+            <li>name</li>
+            <li>family</li>
+        </ol>
+        <ol reversed type="A">
+            <li>after</li>
+            <li>now</li>
+            <li>before</li>
+        </ol>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>language of the web</dd>
+            <dd>the first lunguage</dd>
+        </dl>
+
+        <!--
+            table => like a website page it have a head, body and footer :
+            -thead => table head
+            -tbody => table body
+            -tfoot => table foot
+            tr => table row
+            td => table data ell
+            th => table head cell
+            caption => title of the table
+            colspan => to do in one 
+        -->
+        <table border="1">
+            <caption>students marks</caption>
+            <thead>
+                <tr>
+                    <th>first</th>
+                    <td>last</td>
+                    <td>marks</td>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>anis</td>
+                    <td>karina</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>anis</td>
+                    <td>karina</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>anis</td>
+                    <td>karina</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>anis</td>
+                    <td>karina</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">total</td>
+                    <td>400</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!--
+            span => to select the element for doing what we want there with css for exm to one word not all the paragraphe
+            br => break => go to new line
+            hr => Horizontal Rule => we can do a line 
+        -->
+        <!--
+            div => container => to do part in your page
+        -->
+        <!--
+            HTML Entities lists => to write like this sumbule <>p... in your page
+        -->
+        <!--
+            audio src="" => you can write <source>
+            type => mime type
+        -->
+        <audio controls>
+            <source src=""   type="audio/mpeg">
+        </audio>
+        <iframe src="https://archive.org/details/jamendo-097169#"></iframe>
+        <!--
+           -What do you use iframe for?
+            Iframes are most often used to embed specific content from one web page — like a video, form, document, or even a full web page — within a different web page. This is a powerful capability in HTML — you can take any content from any website (with permission) and place it on your own site to enhance your content.
+            -autoplay => to play the audio when you open the website
+            -loop => to replay the audio
+            -muted => to turn off the sound
+        -->
+        <!--
+            video tag is like the audio tag
+        -->
+        <iframe src="https://www.youtube.com/embed/oJbo28ewnL4?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" >
+
+        </iframe>
+        <video controls poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtdF0P5qDpLrDpuXw0zAiq63qhqznfy7Z2yg&usqp=CAU">
+            <source src=""   type="video/mp4">
+            Your browser does not support video tag
+            <!--
+                if the browser does not support the video or audio type, the user will see this message
+                poster=> is the image you will see in the video when it laoding
+                track => to who not listening for exp or to translate
+            -->
+            <track src="my-file.vtt" kind="subtitles" srclang="eng" label="english">
+        </video>
+    </body>
+</html>
+

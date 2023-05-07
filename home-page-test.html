@@ -1,0 +1,379 @@
+<!--
+    
+    to see the accessibility of your site uoy have to:
+    => open site with live streem in visual studio code
+    => see the code whith a right click in the mouse
+    => go to lighthouse
+    => generate report
+
+    <!doctype html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="descreption" content="home-page">
+            <title>home</title>
+            <style></style>
+            <script></script>
+            <link rel="stylesheet" href="">
+        </head>
+        <body>
+            <div class="header">
+                <h2>logo</h2>
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>servises</li>
+                    <li>contact us</li>
+                </ul>
+            </div>
+            <hr>
+            <ul class="navigation">
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+            <hr>
+            <div class="content">
+                content
+            </div>
+            <div id="post">
+                we are here
+            </div>
+            <div class="sidebar">
+                sidebar
+            </div>
+            <hr>
+            <div class="footer">
+                footer
+            </div>
+        </body>
+    </html>
+-->
+<!--
+    all this up => this down
+-->
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="descreption" content="home-page">
+        <title>home</title>
+        <style></style>
+        <script></script>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <header>
+            <h2>logo</h2>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>servises</li>
+                <li>contact us</li>
+            </ul>
+        </header>
+        <hr>
+        <nav>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </nav>
+        <hr>
+        <section>
+            content
+            <figure>
+                <img src="" alt="image">
+                <figcaption>caption of the image</figcaption>
+            </figure>
+        </section>
+        <article>
+            article
+        </article>
+        <aside>
+            sidebar
+        </aside>
+        <hr>
+        <!--
+            form => it's where the user writed his informations, like sign up in facebook
+            input => the place to write
+            label => is the descreption of the element <input>
+            required => the user can't send the information without write
+            placeholder => to give trhe user more unformation
+            value => what you want to write or save there
+            action => where you want from the information go to? (for the back-end)
+            name => what you want to call this information
+            method => how you wnat from this information to send (get => the user can see his informatin in the url)
+                                                                 (post => he can't)
+            rest => to help the user to deleted all information one time
+            readonly => when we put it, the user can not change, he just can read or dowing copy for example
+            disabled => the user can not change, and he can not send it with the information
+            autofocus => when the user dowing a reflesh to the page he can write in the form without click
+            minlength => is the minimum of character what the user can write
+            maxlength => the opposit of minlength
+            radio => to dowing a checklist
+            cheked => what you want from the user to see from the checklist first
+            we can link the label with his input with id
+            checkbox => it's like the radio but you can choose what you want (more then one)
+            select => when you have a lot of options
+            optgroup => the group of the option
+            multiple => the user can choose more than one
+            selected => like cheked in the radio or checkbox
+            textarea => is where the user can write what he want
+            file => to upload file from desktop
+            novalidate => you don't need to write all the information
+            target blank => to open in a new window
+            datalist => like the select but here you can search
+        -->
+        <form action="" method="POST" novalidate target="_blank">
+            <div>
+                <label>username</label>
+                <input type="text" required placeholder="username" value="anis" readonly name="user"/>
+            </div>
+            <br>
+            <div>
+                <label>password</label>
+                <input 
+                 type="password" 
+                 required 
+                 placeholder="write a complex password" 
+                 minlength="8" 
+                 maxlength="16" 
+                 name="pass"
+                />
+            </div>
+            <br>
+            <div>
+                <label>subject</label>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <label>email</label>
+                <input type="email" required placeholder="write a valid email" value="11@oo.ru" disabled name="mail"/>
+            </div>
+            <br>
+            <hr>
+            <div>
+                <input id="win" type="radio" checked name="os"/>
+                <label for="win">windows</label>
+            </div>
+            <div>
+                <input id="lin"type="radio" name="os"/>
+                <label for="lin" >linux</label>
+            </div>
+            <div>
+                <input id="mac" type="radio" name="os"/>
+                <label for="mac">mac</label>
+            </div>
+            <br>
+            <hr>
+            <div>
+                <input id="win1" type="checkbox" checked name="os"/>
+                <label for="win1">windows</label>
+            </div>
+            <div>
+                <input id="lin1"type="checkbox" name="os"/>
+                <label for="lin1" >linux</label>
+            </div>
+            <div>
+                <input id="mac1" type="checkbox" name="os"/>
+                <label for="mac1">mac</label>
+            </div>
+            <br>
+            <hr/>
+            <label for="book">choose book:</label>
+            <select name="book" id="book">
+                <optgroup label="money books">
+                    <option value="1">book 1</option>
+                    <option value="2">book 2</option>
+                    <option value="3">book 3</option>
+                    <option value="4">book 4</option>
+                    <option value="5">book 5</option>
+                </optgroup>
+                <optgroup label="invest books">
+                    <option value="6">book 6</option>
+                    <option value="7">book 7</option>
+                    <option value="8">book 8</option>
+                    <option value="9">book 9</option>
+                    <option value="10">book 10</option>
+                </optgroup>
+            </select>
+            <br/>
+            <hr/>
+            <textarea name="subject" cols="40" rows="10" placeholder="text test"></textarea>
+            <br>
+            <hr/>
+            <input type="reset" value="reset"/>
+            <input type="submit" value="save"/>
+        </form>
+        <hr>
+        <form action="test.py" method="post">
+            <input type="hidden" placeholder="123">
+            <div>
+                <label>user name</label>
+                <br>
+                <input type="text" required placeholder="username" name="user"/>
+            </div>
+            <br>
+            <hr>
+            <div>
+                <label>password</label>
+                <br>
+                <input type="password" required placeholder="write a complex password"name="pass"/>
+            </div>
+            <br>
+            <hr>
+            <div>
+                <label>mobile</label>
+                <br>
+                <input type="tel" value="" placeholder="+79999999999" name="mob"/>
+            </div>
+            <BR>
+            <hr>
+            <div>
+                <label>E-MAIL</label>
+                <br>
+                <input type="email" value="" required placeholder="write a valid E-MAIL" name="mail"/>
+            </div>
+            <br>
+            <hr>
+            <div> 
+                <label>subject</label>
+                <br>
+                <input type="text" value="" placeholder="write your subject" name="sub"/>
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="empty form"/>
+                <input type="submit" value="send data"/>
+            </div>
+        </form>
+        <hr>
+        <form action="home-page-test.html" method="get">
+            <input type="hidden" value="b92f1fc2fce391ad7af633723afd3055" name="token"/>
+            <div>
+                <label for="user">username</label>
+                <input 
+                  id="user" 
+                  autofocus 
+                  required
+                  type="text" 
+                  minlength="5"
+                  maxlength="20"
+                  placeholder="username" 
+                  name="username"
+                />
+            </div>
+            <br>
+            <div>
+                <label for="email">email</label>
+                <input id="email" readonly type="email" value="a@a.ru" name="mail"/>
+            </div> 
+            <br>
+            <div>
+                <label for="ps">problem solving</label>
+                <input id="ps" type="checkbox" name="ps"/>  
+            </div>
+            <div>
+                <label for="lt">logical thinking</label>
+                <input id="lt" type="checkbox" name="lt"/>  
+            </div>
+            <div>
+                <label for="as">advenced search</label>
+                <input id="as" type="checkbox" name="as"/>  
+            </div>
+            <div>
+                <label for="an">analysis</label>
+                <input id="an" type="checkbox" name="an"/>  
+            </div>
+            <div>
+                <label for="pl">planning</label>
+                <input id="pl" type="checkbox" name="pl"/>  
+            </div>
+            <br>
+            <label for="job">your job</label>
+            <select id="job" name="job">
+                <optgroup label="job 1">
+                    <option>frond-end</option>
+                    <option selected>back-end</option>
+                </optgroup>
+                <optgroup label="job 2">
+                    <option>ui/ux</option>
+                    <option>ful-stack</option>
+                </optgroup>
+            </select>
+            <br/>
+            <label for="prg">choose book:</label>
+            <select id="prg">
+                <optgroup label="php">
+                    <option>v5.0</option>
+                    <option>v7.0</option>
+                    <option>v8.0</option>
+                </optgroup>
+                <optgroup label="python">
+                    <option>v2.0</option>
+                    <option>v3.0</option>
+                    <option>v3.9</option>
+                </optgroup>
+            </select>
+            <hr>
+            <textarea name="brief" placeholder="Write Here Why You Want To Learn Programming" cols="40" rows="10"></textarea>
+            <hr>
+            <div>
+                <label for="f">upload</label>
+                <input id="f" type="file"/>
+            </div>
+            <hr>
+            <div>
+                <label for="s">search</label>
+                <input id="s" type="search"/>
+            </div>
+            <hr>
+            <div>
+                <label for="u">url</label>
+                <input id="u" type="url"/>
+            </div>
+            <hr>
+            <div>
+                <label for="d">date</label>
+                <input id="d" type="date"/>
+            </div>
+            <hr>
+            <div>
+                <label for="m">month</label>
+                <input id="m" type="month"/>
+            </div>
+            <hr>
+            <div>
+                <label for="t">time</label>
+                <input id="t" type="time"/>
+            </div>
+            <hr>
+            <input list="programming" name="prog"/>
+            <datalist id="programming">
+                <option value="python">
+                <option value="php">
+                <option value="c#">
+                <option value="c">
+                <option value="c++">
+                <option value="scala">
+            </datalist>
+            <hr>
+            <input type="reset" value="empte"/>
+            <input type="submit" value="send"/>
+        </form>
+        <hr>
+        <footer>
+            footer
+        </footer>
+    </body>
+</html>

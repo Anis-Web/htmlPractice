@@ -1,0 +1,156 @@
+<!--
+    html => HyperText Markup Language
+    if we did not write the element "doctype" who means the html5
+    the browser will fellow the quirks mode, and if we did will be the standard mode
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <!--
+            UTF => Unicode Transformation Format
+            <meta name="copyright" content="your company or brand name "/>
+            => to tell the user that you have the oun content copyright
+            <meta name="author" content="Anis"/> => the writer, who write the content 
+            of the page
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            => to let the width of the website lie the divice, and corecting the Zoom level
+            when you reflesh the page
+        -->
+        <meta name="description" content="html practice"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>html practice</title>
+        <style></style>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <h1>Html practice</h1>
+        <hr/>
+        <div>
+            <h2>My Info</h2>
+            <p>
+                My Name is: <b>Anis Ch</b>
+            </p> 
+            <p>
+                Iam <strong>Available</strong> For Hire
+            </p>
+            <p>
+                My Hour Old Price is <del>$30</del> And The New Price is <mark>$50</mark>
+            </p>
+            <p>
+                Visit My Website From This Link 
+                <a href="https://www.google.com" target="_blank" title="anis_academy">Anis_Academy</a>
+            </p>
+        </div>  
+        <hr/>
+        <div>
+            <h2>Here Is Some Of My Clients</h2>
+            <img src="img/cat.jpg" alt="cat" width="50" height="50">
+            <img src="img/cat.jpg" alt="cat" width="50" height="50">
+            <img src="img/cat.jpg" alt="cat" width="50" height="50">
+        </div>
+        <hr/>
+        <div>
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>
+                    JavaScript 
+                    <ul>
+                        <li>Vuejs</li>
+                        <li>Reactjs</li>
+                        <li>
+                            Angular
+                            <ol start="4">
+                                <li>v4.0</li>
+                                <li>v5.0</li>
+                                <li>v6.0</li>
+                                <li>v7.0</li>
+                                <li>v8.0</li>
+                            </ol>
+                        </li>
+                        <li>Svelt</li>
+                    </ul>
+                </li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <hr/>
+        <div>
+            <caption>Members Data</caption>
+            <table border="1" width="100%">
+                <thead>
+                    <td>Group</td>
+                    <td>avatar</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>Character</td>
+                    <td>Profile</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Ninja</td>
+                        <td>
+                            <img src="img/cat.jpg" alt="cat" width="40" height="40"/>
+                        </td>
+                        <td>
+                            Anis <br/>
+                            Anisovich
+                        </td>
+                        <td>
+                            a1@cc.ru
+                            <hr/>
+                            a2@cc.ru
+                        </td>
+                        <td>
+                            &copy;
+                        </td>
+                        <td>
+                            <a href="https=//www.google.com" title="profile" target="_blank">profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/cat.jpg" alt="cat" width="40" height="40"/>
+                        </td>
+                        <td>
+                            Karina <br/>
+                            Maratovna
+                        </td>
+                        <td>k1@aa.ru</td>
+                        <td>
+                            &trade;
+                        </td>
+                        <td>
+                            <a href="https://www.google.com" title="Profile" target="_blank">Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Memberes</td>
+                        <td>
+                            <img src="img/cat.jpg" alt="cat" width="40" height="40"/>
+                        </td>
+                        <td>
+                            Adam <br/>
+                            Anisovich
+                        </td>
+                        <td>dd@aa.ru</td>
+                        <td>
+                            &reg;
+                        </td>
+                        <td>
+                            <a href="https://www.google.com" title="Profile" target="_balnk">Profile</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="5">Total Members</td>
+                    <td>3</td>
+                </tfoot>
+            </table>
+        </div>
+        <hr/>
+    </body>
+</html>
